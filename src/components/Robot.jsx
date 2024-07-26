@@ -41,6 +41,10 @@ export function Robot(props) {
 
     .to(robot.current.rotation, { y: Math.PI, duration: 2 }, 22)  // Flip 180 degrees on Y axis
     .to(robot.current.rotation, { y: Math.PI * 2, duration: 2 }, 24)
+  
+    to(robot.current.rotation, { y: Math.PI * 2, duration: 2 }, 2) // Flip back to 0
+   .to(robot.current.rotation, { y: Math.PI * 3, duration: 2 }, 4) // Flip 360 degrees
+  .to(robot.current.rotation, { y: Math.PI * 7, duration: 2 }, 12)
 
   },[])
   

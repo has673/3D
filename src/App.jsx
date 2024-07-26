@@ -1,5 +1,5 @@
 import React , {useEffect} from 'react'
-import { ScrollControls, Scroll, Environment,Stars,Backdrop,Float, Ring} from '@react-three/drei'
+import { ScrollControls, Scroll, Environment,Sparkles,Backdrop,Float, Ring} from '@react-three/drei'
 
 import baffle from 'baffle'
 import { Space } from './components/Space';
@@ -28,10 +28,7 @@ function App() {
       <ScrollControls pages={6} damping={0.1}>
 
         <Space scale={0.8}/>
-        <Stars radius={100}
-        depth={50} 
-        count={5000}>
-        </Stars>
+        <Sparkles size={5} count={300} color={"#fff"} scale={[10,10,10] }></Sparkles>
         <Backdrop
           receiveShadow
           floor={20.5} // Stretches the floor segment, 0.25 by default
@@ -76,7 +73,7 @@ function App() {
           
           <h2 style={{ position: 'absolute', top: '350vh', left: '50%', transform: `translate(-50%,-50%)` }}>Cutting-Edge of Grooming</h2>              
           
-          <button className='btn' style={{ position: 'absolute', top: `590vh`,left: '50%', transform: `translate(-50%,-50%)` }}>Buy now</button>
+          <button style={{ position: 'absolute', top: `590vh`,left: '50%', transform: `translate(-50%,-50%)` }}>Buy now</button>
         </Scroll>
       </ScrollControls>
     </>
