@@ -1,5 +1,5 @@
 import React , {useEffect} from 'react'
-import { ScrollControls, Scroll, Environment,Sparkles,Backdrop,Float, Ring} from '@react-three/drei'
+import { ScrollControls, Scroll, Environment,Stars,Backdrop,Float, Ring} from '@react-three/drei'
 
 import baffle from 'baffle'
 import { Space } from './components/Space';
@@ -28,7 +28,10 @@ function App() {
       <ScrollControls pages={6} damping={0.1}>
 
         <Space scale={0.8}/>
-        <Sparkles size={2} color={"#fff"} scale={[10,10,10]}></Sparkles>
+        <Stars radius={100}
+        depth={50} 
+        count={5000}>
+        </Stars>
         <Backdrop
           receiveShadow
           floor={20.5} // Stretches the floor segment, 0.25 by default
