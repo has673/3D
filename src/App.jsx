@@ -1,8 +1,8 @@
-import {useEffect} from 'react'
-import {RoundedBox, ScrollControls, Scroll, Environment,Sparkles,Backdrop,Float, Ring} from '@react-three/drei'
-import { Robot } from './components/Robot';
-import baffle from 'baffle'
+import React , {useEffect} from 'react'
+import { ScrollControls, Scroll, Environment,Sparkles,Backdrop,Float, Ring} from '@react-three/drei'
 
+import baffle from 'baffle'
+import { Space } from './components/Space';
 
 function App() {
 
@@ -27,7 +27,7 @@ function App() {
 
       <ScrollControls pages={6} damping={0.1}>
 
-        <Robot scale={0.8}/>
+        <Space scale={0.8}/>
         <Sparkles size={2} color={"#fff"} scale={[10,10,10]}></Sparkles>
         <Backdrop
           receiveShadow
@@ -48,6 +48,7 @@ function App() {
         <Ring scale={3.5} position-z={-2.5} position-y={-1} args={[0, 0.95, 60]} receiveShadow>
           <meshStandardMaterial color="#2a3a3f" />
         </Ring>
+      
         </Float>              
 
         <Scroll>
