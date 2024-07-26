@@ -70,23 +70,10 @@ function App() {
               <button>Read more</button>
             </div>
           </div>
-          <h2 style={{
-            position: 'absolute',
-            top: '350vh',
-            left: '50%',
-            transform: 'translate(-50%, -50%)',
-            opacity: 0,
-            transition: 'opacity 0.5s ease-in-out, top 0.5s ease-in-out'
-          }}>Cutting-Edge of Grooming</h2>
           
-          <button style={{
-            position: 'absolute',
-            top: '590vh',
-            left: '50%',
-            transform: 'translate(-50%, -50%)',
-            opacity: 0,
-            transition: 'opacity 0.5s ease-in-out, top 0.5s ease-in-out'
-          }}>Buy now</button>
+          <h2 style={{ position: 'absolute', top: '350vh', left: '50%', transform: `translate(-50%,-50%)` }}>Cutting-Edge of Grooming</h2>              
+          
+          <button style={{ position: 'absolute', top: `590vh`,left: '50%', transform: `translate(-50%,-50%)` }}>Buy now</button>
         </Scroll>
       </ScrollControls>
     </>
